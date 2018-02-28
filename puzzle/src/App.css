@@ -1,0 +1,14 @@
+body, html {
+  background-color: #343434; }
+
+.puzzle-wrapper {
+  margin: 48px auto; }
+  .puzzle-wrapper h3 {
+    color: #1ed760;
+    margin: 0 auto; }
+  .puzzle-wrapper .puzzle-block {
+    margin: 24px auto; }
+    .puzzle-wrapper .puzzle-block img {
+      display: block;
+      margin: auto;
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); }

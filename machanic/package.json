@@ -1,0 +1,17 @@
+{
+  "name": "machanic",
+  "version": "1.0.0",
+  "description": "package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jirayu Limjinda",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.0",
+    "chalk": "^2.3.1",
+    "sharp": "^0.19.1",
+    "smartcrop-sharp": "^2.0.2"
+  }
+}

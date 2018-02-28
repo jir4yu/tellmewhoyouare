@@ -1,0 +1,64 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!-- This site was created and maintained by JindaTheme. -->
+<!-- visit us, www.JindaTheme.com -->
+	<head>
+		<title>Tell me who you are!</title>
+	  <meta charset="utf-8">
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="application-name" content="Application Name">
+		<meta name="description" content="A description of the page">
+		<meta name="format-detection" content="telephone=no">
+		<script src="lib/modernizr-custom.js"></script>	
+		<link rel="stylesheet" href="lib/normalize.css" />
+		<style>
+			body, html {
+				background-color: #323232;
+			}
+			#canvas {
+				width: 640px;
+				height: 640px;
+				display: block;
+				margin: 20px auto;
+				-webkit-box-shadow: 0 24px 32px rgba(0,0,0,0.4);
+				box-shadow: 0 24px 32px rgba(0,0,0,0.4);
+			}
+			#canvas img {
+				display: inline-block;
+				vertical-align:text-bottom
+			}
+		</style>
+	</head>
+	<body>
+		<div id="canvas"></div>
+
+		<script src="lib/jquery-3.3.1.min.js"></script>
+		<script src="lib/lodash.min.js"></script>
+		<script>
+			let rows = 5;
+			let columns = 5;
+			let x = 0;
+			let y = 0;
+
+			let boxW = 128;
+			let boxH = 128;
+
+			let boxCount = Array.apply(null, { length: rows * columns }).map(
+				Number.call,
+				Number
+			);
+
+			_.shuffle(boxCount).forEach(function(index) {
+				index++;
+				let image = new Image(boxW, boxH);
+				image.src = `./images/guest-${index}.jpg`;
+				$('#canvas').append(image);
+			});
+
+		</script>
+	</body>
+</html>
