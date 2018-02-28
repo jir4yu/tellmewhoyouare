@@ -17,3 +17,15 @@ body, html {
 		}
 	}
 }
+
+.top-navigation {
+	margin: 24px auto;
+	a {
+		color: $white;
+		text-decoration: none !important;
+		&.active {
+			color: $green;
+			font-weight: bold;
+		}
+	}
+}

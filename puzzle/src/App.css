@@ -12,3 +12,12 @@ body, html {
       display: block;
       margin: auto;
       box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); }
+
+.top-navigation {
+  margin: 24px auto; }
+  .top-navigation a {
+    color: #ffffff;
+    text-decoration: none !important; }
+    .top-navigation a.active {
+      color: #1ed760;
+      font-weight: bold; }
