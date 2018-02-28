@@ -7,7 +7,7 @@ import QuizTemplate from './components/QuizTemplate'
 class App extends Component {
   render() {
     return (
-      <Router basename="/demo/cm">
+      <Router>
         <div className="wrapper">
           <div className="container">
             {/*<div className="d-flex space-around justify-content-around top-navigation">
