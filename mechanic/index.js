@@ -13,8 +13,8 @@ const rl = readline.createInterface({
 /**
  * Init the default rows and columns
  */
-let rows = 4;
-let columns = 4;
+let rows = 3;
+let columns = 3;
 
 /**
  * Read row and column number from user console
