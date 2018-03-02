@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, NavLink, Switch } from "react-router-do
 import './App.css'
 
 import QuizTemplate from './components/QuizTemplate'
+import NotFound from './components/NotFound'
 
 class App extends Component {
   render() {
@@ -32,14 +33,14 @@ class App extends Component {
                 render={() => 
                   <QuizTemplate 
                     quizNumber={2} 
-                    text="to easy, how about this?" 
+                    text="To easy? how about this" 
                     sliceNumber={12} 
                   /> 
                 } 
               />
               {/* Quiz 3 */}
               <Route 
-                path="/quiz3" 
+                path="/last" 
                 render={() => 
                   <QuizTemplate 
                     quizNumber={3} 
@@ -48,6 +49,7 @@ class App extends Component {
                   /> 
                 } 
               />
+              <Route component={NotFound} />
             </Switch>
           </div>
         </div>
