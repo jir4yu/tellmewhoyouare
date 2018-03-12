@@ -61,10 +61,15 @@ class QuizTemplate extends Component {
       <div>
         { 
           this.state.isFinished 
-          ? <h1 className="ended-text">
-              Stage was ended
-              <small>- {this.props.answer} -</small>
-            </h1>
+          ? <div className="puzzle-wrapper">
+              <h1 className="ended-text">
+                Stage was ended
+                <small>- {this.props.answer} -</small>
+              </h1>
+              <div className="puzzle-block">
+                <img src={`./img/quiz${quizNumber}/completed.jpg`} className="img-fluid" alt="Answer" />
+              </div>
+            </div>
           : <div className="puzzle-wrapper">
               <h3 className="lead text-center">{text}</h3>
               <div className="puzzle-block">

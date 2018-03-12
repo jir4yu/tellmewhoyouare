@@ -55,7 +55,7 @@ class App extends Component {
                   <QuizTemplate 
                     quizNumber={2} 
                     text="To easy? how about this" 
-                    sliceNumber={12}
+                    sliceNumber={16}
                     database={this.database} 
                     stage="quiz2"
                     answer="Palmy"

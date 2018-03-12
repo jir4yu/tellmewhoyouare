@@ -22,3 +22,6 @@ yarn-error.log*
 
 # ignore firebase config
 /src/components/Fire.js
+/public/img/quiz1/completed.jpg
+/public/img/quiz2/completed.jpg
+/public/img/quiz3/completed.jpg
