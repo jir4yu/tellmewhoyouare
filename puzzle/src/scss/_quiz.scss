@@ -29,3 +29,19 @@ body, html {
 		}
 	}
 }
+
+.ended-text {
+	color: $white;
+	font-size: 16px;
+	margin: 40px auto;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	small {
+		display: block;
+		margin: 4px 0 0;
+		font-size: 24px;
+		font-weight: bold;
+		color: #0ed753;
+	}
+}
