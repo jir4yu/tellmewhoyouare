@@ -1,14 +1,13 @@
 import * as firebase from 'firebase'
 
 const config = {
-	apiKey: "AIzaSyDCFhlSKSJgDrmMVrr00BiuYwrwIDAa8xw",
-  authDomain: "guesswho-6caed.firebaseapp.com",
-  databaseURL: "https://guesswho-6caed.firebaseio.com",
-  projectId: "guesswho-6caed",
-  storageBucket: "guesswho-6caed.appspot.com",
-  messagingSenderId: "701479728433"
-};
+	apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID
+}
 
 const FB = firebase.initializeApp(config);
-
 export default FB;
