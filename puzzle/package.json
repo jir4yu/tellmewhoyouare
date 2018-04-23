@@ -22,7 +22,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "homepage": "http://128.199.198.73:8088"
+    "eject": "react-scripts eject",
+    "production": "npm run build && firebase deploy"
+  }
 }
