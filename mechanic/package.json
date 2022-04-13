@@ -10,7 +10,7 @@
   "author": "Jirayu Limjinda",
   "license": "MIT",
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^3.2.2",
     "chalk": "^2.3.1",
     "sharp": "^0.19.1",
     "smartcrop-sharp": "^2.0.2"
